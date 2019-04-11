@@ -1,0 +1,87 @@
+/*general*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'europeext', sans-serif;
+}
+.content{
+    width: 100%;
+    min-width: 980px;
+    overflow: hidden;
+}
+.content__sub{
+    width: 980px;
+    margin: 0 auto;
+}
+/*header*/
+header{
+    font-family: sans-serif;
+    background:#01983b url('pic/pattern.png');
+    height: 76px;
+    width: 100%;
+}
+nav{
+    width: 980px;
+    margin: 0 auto;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li{
+    line-height: 76px;
+    float: left;
+    margin-right: 38px;
+}
+nav li:last-child{
+    margin-right: 0;
+}
+nav li a{
+    text-decoration: none;
+    color: #fff;
+}
+.is-active{
+    padding: 5px 0;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+/*logo, head-contacts, search field*/
+.head-contacts{
+    float: right;
+    margin-top: 40px;
+}
+.head-contacts p a{
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #2c2783;
+    text-decoration: none;
+}
+.head-contacts p:first-child{
+    text-align: right;
+    font-family: sans-serif;
+    font-size: 12px;
+    line-height: 21px;
+    color: #01983b;
+}
+.head-contacts p:first-child img{
+    display: inline-block;
+    vertical-align:middle;
+}
+.head-contacts input[type='text']{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #bfbeda;
+    width: 390px;
+}
+button[type='submit']{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.logo{
+    float: left;
+    margin-top: 40px;
+}
+

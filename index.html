@@ -8,6 +8,7 @@
     <meta name="author" content="ruslan lozhkin">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="fonts/europeext.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -29,7 +30,7 @@
                 </div>
             </header>
             <main>
-                <div class="content__sub">
+                <div class="content__sub clearfix">
                     <div class="logo">
                         <img src="img/logo.png" alt>
                     </div>
@@ -43,8 +44,17 @@
                         </button>
                     </div>
                 </div>
-                <div class="carousel">
-
+                <div class="content__sub slider">
+                    <div class="carousel">
+                        <div><img src="img/1.png" alt></div>
+                        <div><img src="img/2.png" alt></div>
+                        <div><img src="img/1.png" alt></div>
+                        <div><img src="img/2.png" alt></div>
+                    </div>
+                    <ul class="arrows">
+                        <li class="prev"></li>
+                        <li class="next"></li>
+                    </ul>
                 </div>
                 <div class="movie">
                     <div class="title">
@@ -250,8 +260,9 @@
 
                 </section>
             </footer>
-            <script></script>
-            <script></script>
+            <script type="text/javascript" src="js/jquery-3.4.0.min.js"></script>
+            <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+            <script type="text/javascript" src="js/main.js"></script>
     </div>
 </body>
 </html>

@@ -13,7 +13,21 @@ body{
     width: 980px;
     margin: 0 auto;
 }
-/*header*/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+    width: 0;
+    
+}
+main{
+    background-image: url('back-img/museum.png');
+}
+.movie{
+    background-image: url('back-img/video-background.png');
+}
+/*header*/ /*TODO add hover active to the nav menu
+                  consult with client*/
 header{
     font-family: sans-serif;
     background:#01983b url('pic/pattern.png');
@@ -40,6 +54,11 @@ nav li:last-child{
 nav li a{
     text-decoration: none;
     color: #fff;
+}
+nav li a:hover,
+nav li a:active{
+    padding-bottom: 5px;
+    border-bottom: 1px solid #fff;
 }
 .is-active{
     padding: 5px 0;
@@ -68,6 +87,9 @@ nav li a{
     display: inline-block;
     vertical-align:middle;
 }
+.head-contacts p img:hover{
+    opacity: 0.7;
+}
 .head-contacts input[type='text']{
     border-top: none;
     border-right: none;
@@ -85,3 +107,57 @@ button[type='submit']{
     margin-top: 40px;
 }
 
+/*carousel*/ /*TODO consult with client about carousel's previous and                       next arrows*/
+.carousel{
+    margin-top: 16px;
+    width: 100%;
+}
+.slider{
+    position: relative;
+}
+.prev{
+    background-image: url('pic/prev.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 40%;
+    left: 2%;
+    list-style: none;
+}
+.next{
+    background-image: url('pic/next.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 40%;
+    right: 2%;
+    list-style: none;
+}
+.slick-dots{
+    position: absolute;
+    bottom: -10px;
+    left: -15px;
+    z-index: 999;
+}
+.slick-dots li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 5px;
+}
+.slick-dots li img:nth-child(1) {
+    display: block;
+}
+
+.slick-dots li img:nth-child(2) {
+    display: none;
+}
+
+.slick-dots li.slick-active img:nth-child(1) {
+    display: none;
+}
+
+.slick-dots li.slick-active img:nth-child(2) {
+    display: block;
+}

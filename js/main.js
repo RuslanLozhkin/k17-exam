@@ -7,7 +7,7 @@ $(document).ready(function(){
   cssEase: 'linear',
   arrows: false,
   customPaging: function(slider, i) {    
-      return '<a href="#"><img src="paging.png"><img src="activePaging.png"></a>';
+      return '<a href="#"><img src="img/paging.png"><img src="img/activePaging.png"></a>';
   },
   });
   $('.prev').click(function(){

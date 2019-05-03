@@ -20,11 +20,13 @@ body{
     width: 0;
     
 }
-main{
+.slider{
     background-image: url('back-img/museum.png');
     background-clip: border-box;
     background-origin: padding-box;
     background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: bottom left;
 }
 .movie{
     background-image:url('back-img/video-background.png');
@@ -34,8 +36,22 @@ main{
     background-size: 100% 67%;
     position: relative;
 }
-/*header*/ /*TODO add hover active to the nav menu
-                  consult with client*/
+.table1{
+    background: url('back-img/table1-background.png');
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: 100% auto;
+    background-position: center left;
+}
+.table2{
+    background: url('back-img/table2-background.png');
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: 100% auto;
+    background-position: center left;
+}
 header{
     font-family: sans-serif;
     background:#01983b url('pic/pattern.png');
@@ -119,11 +135,16 @@ button[type='submit']{
     margin-top: 40px;
 }
 .carousel{
-    margin-top: 16px;
-    width: 100%;
+    
+    width: 980px;
+
 }
-.slider{
+.slider__sub{
     position: relative;
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
 }
 .prev{
     background-image: url('pic/prev.png');
@@ -174,7 +195,7 @@ button[type='submit']{
 .slider-text{
     position: absolute;
     background-color: rgba(0, 0, 0, 0.36);
-    top: 65%;
+    top: 55%;
     left: 0;
     z-index: auto;
     padding-left: 24px;
@@ -203,8 +224,7 @@ button[type='submit']{
 }
 .slider-shadow {
     display: block;
-    margin-left:  auto;
-    margin-right: auto;
+    margin-left: -120px;
     margin-bottom: 4px;
 }
 .title img{
@@ -270,13 +290,18 @@ button[type='submit']{
     background-color: #026e2c;
 }
 .usage{
+    font-family: sans-serif;
+    font-size: 14px;
+    background: url('back-img/usingarea-background.png') no-repeat;
+    background-size: 100% 100%;
+    background-position: top right;
+}
+.usage__sub{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 1225px;
     white-space: nowrap;
-    font-family: sans-serif;
-    font-size: 14px;
+    width: 1225px;
 }
 .usage__img1{
     background: url('back-img/usage-img1.jpg') no-repeat;
@@ -372,4 +397,139 @@ button[type='submit']{
     height: 18px;
     width: 15%;
     background: rgba(1, 152, 59, 0.45);
+}
+.usage__rombs{
+    margin: 50px 40px 125px 40px;
+    height: 290px;
+}
+.usage__rombs span{
+    display: inline-block;
+    width: 190px;
+    height: 190px;
+    background: url('pic/romb-back.png') no-repeat center;
+    margin-bottom: 24px;
+}
+.usage__rombs p{
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 16px;
+}
+.usage__rombs div{
+    float: left;
+    width: 190px;
+    height: auto;
+    text-align: center;
+    color: #01983b;
+}
+.usage__rombs div:nth-child(even){
+    padding-top: 50px;
+}
+.usage__rombs span img{
+    margin: 0 auto;
+    margin-top: 35px;
+}
+.table1{
+    position: relative;
+}
+.table1__sub{
+    margin-top: 70px;
+    padding: 0 120px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1225px;
+    border: 3px solid #e6ecf4;
+    background: rgba(255, 255, 255, 0.6);
+    position: relative;
+    z-index: 3;
+}
+.table1 .title p{
+    color: #01983b;
+}
+.table1__sub table{
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #d5dfec;
+    border-radius: 4px;
+    border-collapse: collapse;
+    font-size: 14px;
+    font-family: sans-serif;
+    line-height: 39px;
+    background: #fff;
+    color: #043567;
+}
+.table1__sub table th{
+    border: 1px solid #e6ecf4;
+    background: #01983b url('pic/pattern.png');
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+}
+.table1__sub table tr:nth-child(even){
+    background: #f2f5f7;
+}
+.table1__sub table td{
+    border: 1px solid #e6ecf4;
+    padding: 0 24px;
+}
+.table1__sub table th:nth-child(1){
+    text-align: left;
+    padding: 0 24px;
+}
+.penopolistirolcopy{
+    position: absolute;
+    bottom: 65px;
+    right: -60px;
+}
+.table2{
+    padding: 50px 0 62px 0;
+
+}
+.table2__sub{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1225px;
+}
+.table2__sub table{
+    font-family: sans-serif;
+    font-size: 14px;
+    border-spacing: 0 5px;
+}
+.table2__sub table tr td:nth-child(1){
+    background-color: rgba(255, 0, 0, 0.25);
+    width: 62px;
+}
+.table2__sub table tr td:nth-child(2){
+    background-color: rgba(255, 0, 0, 0.5);
+    width: 62px;
+}
+.table2__sub table tr td:nth-child(3){
+    padding: 6px 28px 0 14px;
+    background-color: #f00;
+}
+.table2__sub table tr td:nth-child(6){
+    padding: 6px 23px 0 17px;
+    background-color: #01983b;
+}
+.table2__sub table tr td:nth-child(4){
+    background: #f00;
+    width: 365px;
+    clear: both;
+}
+.table2__sub table tr td:nth-child(5){
+    width: 9px;
+}
+.table2__sub table tr td:nth-child(7){
+    background-color: #01983b;
+    width: 600px;
+    clear: both;
+}
+.table2__sub table tr td:nth-child(8){
+    background-color: rgba(0, 255, 0, 0.5);
+    width: 62px;
+}
+.table2__sub table tr td:nth-child(9){
+    background-color: rgba(0, 255, 0, 0.25);
+    width: 62px;
 }

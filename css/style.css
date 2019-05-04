@@ -58,6 +58,12 @@ header{
     height: 76px;
     width: 100%;
 }
+footer{
+    background: url('back-img/PENOBOARD.png');
+    background-size: 100% 100%;
+    background-clip: border-box;
+    background-origin: padding-box;
+}
 nav{
     width: 980px;
     margin: 0 auto;
@@ -483,7 +489,7 @@ button[type='submit']{
     right: -60px;
 }
 .table2{
-    padding: 50px 0 62px 0;
+    padding: 50px 0 0 0;
 
 }
 .table2__sub{
@@ -532,4 +538,108 @@ button[type='submit']{
 .table2__sub table tr td:nth-child(9){
     background-color: rgba(0, 255, 0, 0.25);
     width: 62px;
+}
+.gallery{
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+}
+.gallery a{
+    float: left;
+    width: 181px;
+    margin-right: 40px;
+}
+.certificates{
+    position: relative;
+}
+.certificates .title{
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.prev__gallery{
+    background: url('pic/prev__gallery.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 65%;
+    left: 15%;
+    z-index: 3;
+}
+.next__gallery{
+    background: url('pic/next__gallery.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 65%;
+    right: 15%;
+    z-index: 3;
+}
+.award p{
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #073d79;
+}
+.award p{
+    text-align: center;
+}
+.award img{
+    display: block;
+    width: 110px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.end-contacts{
+    background: #01983b url('pic/pattern.png');
+    display: block;
+    width: 1225px;
+    height: 230px;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.5),inset 0px 3px 0px 0px rgba(255, 255, 255, 0.2);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    border-radius: 0 0 20px 20px;
+    position: relative;
+    z-index: 3;
+}
+.end-contacts p{
+    text-align: center;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+.end-contacts p:first-child{
+    font-size: 30px;
+    font-family: 'europeext';
+    font-weight: bold;
+}
+.end-contacts a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+}
+.map{
+    margin-top: -35px;
+}
+footer{
+    margin-top: -20px;
+    padding: 26px 0 0 0;
+    font-family: sans-serif;
+    font-weight: bold;
+    height: 320px;
+}
+footer p{
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}
+footer a{
+    color: #fff;
+    display: block;
+    margin-top: 100px;
+    text-decoration: none;
+    font-size: 12px;
 }

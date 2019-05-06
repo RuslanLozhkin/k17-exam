@@ -280,6 +280,7 @@ button[type='submit']{
     background:#01983b url('pic/pattern.png');
     box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.5);
     margin-bottom: 78px;
+    cursor: pointer;
 }
 .btn a{
     font-weight: bold;

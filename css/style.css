@@ -310,31 +310,33 @@ button[type='submit']{
     width: 1225px;
 }
 .usage__img1{
+    position: relative;
     background: url('back-img/usage-img1.jpg') no-repeat;
-    background-size: 100% 100%;
     display: inline-block;
-    width: 610px;
-    height: 308px;
 }
 .usage__img2{
+    position: relative;
     background: url('back-img/usage-img2.jpg') no-repeat content-box;
-    background-size: 100% 100%;
     display: inline-block;
-    width: 610px;
-    height: 308px;
+}
+.usage__img1 img{
+    position: absolute;
+    top: 92%;
+}
+.usage__img2 img{
+    position: absolute;
+    top: 92%;
 }
 .usage__img1 div{
     width: 610px;
     height: 308px;
-    background: rgba(0,0,0,0.5);
-    background-size: 100% 100%;
+    background-color: rgba(0,0,0,0.5);
     color: #fff;
 }
 .usage__img2 div{
     width: 610px;
     height: 308px;
-    background: rgba(0,0,0,0.5);
-    background-size: 100% 100%;
+    background-color: rgba(0,0,0,0.5);
     color: #fff;
 }
 .usage__list1{
@@ -550,31 +552,34 @@ button[type='submit']{
     width: 181px;
     margin-right: 40px;
 }
-.certificates{
+.certificates__sub{
+    width: 980px;
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
 .certificates .title{
     margin-top: 0;
     margin-bottom: 30px;
 }
 .prev__gallery{
-    background: url('pic/prev__gallery.png');
+    background: url('pic/prev.png');
     background-repeat: no-repeat;
     position: absolute;
     width: 50px;
     height: 50px;
     top: 65%;
-    left: 15%;
+    left: 2%;
     z-index: 3;
 }
 .next__gallery{
-    background: url('pic/next__gallery.png');
+    background: url('pic/next.png');
     background-repeat: no-repeat;
     position: absolute;
     width: 50px;
     height: 50px;
     top: 65%;
-    right: 15%;
+    right: 2%;
     z-index: 3;
 }
 .award p{
@@ -630,16 +635,27 @@ footer{
     font-family: sans-serif;
     font-weight: bold;
     height: 320px;
+    clear: both;
 }
 footer p{
     text-align: center;
     color: #fff;
     font-size: 12px;
 }
+footer p:last-child{
+    margin-top: 100px;
+}
+
+footer .in-vk a{
+    display: inline-block;
+    width: 33px;
+}
+footer .in-vk a:hover{
+    opacity: 0.7;
+}
 footer a{
     color: #fff;
     display: block;
-    margin-top: 100px;
     text-decoration: none;
     font-size: 12px;
 }

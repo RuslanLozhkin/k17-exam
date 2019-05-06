@@ -11,7 +11,8 @@ $(document).ready(function(){
   }
   });
   $('.gallery').slick({
-    autoplay: false,
+    autoplay: true,
+    autoplaySpeed: 4500,
     dots: false,
     infinite: true,
     slidesToShow: 5,

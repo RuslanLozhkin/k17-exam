@@ -34,8 +34,7 @@ body{
     background-clip: border-box;
     background-origin: padding-box;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    position: relative;
+    background-size: 100% auto;
 }
 .table1{
     background: url('back-img/table1-background.png');
@@ -157,7 +156,6 @@ body{
 }
 .carousel{
     width: 980px;
-
 }
 .slider__sub{
     position: relative;
@@ -245,7 +243,6 @@ body{
 .slider-shadow {
     display: block;
     margin-left: -120px;
-    /*margin-bottom: 4px;*/
 }
 .title{
     font-family: 'europeext';
@@ -263,19 +260,21 @@ body{
     margin-top: 20px;
 }
 .penopolistirol{
-    margin-left: -55px;
-    margin-top: 10px;
+    position: absolute;
+    top: 20px;
+    left: -600px;
+    z-index: -1;
+    
 }
 .movie__block{
-    display: inline-block;
-    vertical-align: top;
     width: 574px;
-    position: absolute;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
     margin-top: -12px;
+    position: relative;
+    z-index: 99;
 }
 .movie-shadow{
     display: block;
@@ -293,7 +292,7 @@ body{
     font-size: 14px;
     line-height: 17px;
     color: #073d79;
-    margin-top: -65px;
+    margin-top: -12px;
     margin-bottom: 40px;
 }
 .btn{

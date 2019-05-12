@@ -3,6 +3,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'europeext', sans-serif;
+    text-transform: uppercase;
 }
 .content{
     width: 100%;
@@ -25,15 +26,15 @@ body{
     background-clip: border-box;
     background-origin: padding-box;
     background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: bottom left;
+    background-size: auto 100%;
+    background-position: center;
 }
 .movie{
     background-image:url('back-img/video-background.png');
     background-clip: border-box;
     background-origin: padding-box;
     background-repeat: no-repeat;
-    background-size: 100% 67%;
+    background-size: auto auto;
     position: relative;
 }
 .table1{
@@ -52,41 +53,41 @@ body{
     background-size: 100% auto;
     background-position: center left;
 }
-header{
+.header{
     font-family: sans-serif;
     background:#01983b url('pic/pattern.png');
     height: 76px;
     width: 100%;
 }
-footer{
+.footer{
     background: url('back-img/PENOBOARD.png');
     background-size: 100% 100%;
     background-clip: border-box;
     background-origin: padding-box;
 }
-nav{
+.nav{
     width: 980px;
     margin: 0 auto;
 }
-nav ul{
+.nav ul{
     margin: 0;
     padding: 0;
     list-style: none;
 }
-nav li{
+.nav li{
     line-height: 76px;
     float: left;
     margin-right: 38px;
 }
-nav li:last-child{
+.nav li:last-child{
     margin-right: 0;
 }
-nav li a{
+.nav li a{
     text-decoration: none;
     color: #fff;
 }
-nav li a:hover,
-nav li a:active{
+.nav li a:hover,
+.nav li a:active{
     padding-bottom: 5px;
     border-bottom: 1px solid #fff;
 }
@@ -99,6 +100,10 @@ nav li a:active{
 .head-contacts{
     float: right;
     margin-top: 25px;
+}
+.head-contacts p:nth-child(2){
+    text-transform: none;
+    margin-top: -8px;
 }
 
 .head-contacts p a{
@@ -119,8 +124,14 @@ nav li a:active{
     display: inline-block;
     vertical-align:middle;
 }
+.head-contacts p:first-child span{
+    margin-right: 10px;
+}
 .head-contacts p img:hover{
     opacity: 0.7;
+}
+.head-contacts form{
+    margin-top: -10px;
 }
 .head-contacts input[type='text']{
     border-top: none;
@@ -129,19 +140,22 @@ nav li a:active{
     border-bottom: 1px solid #bfbeda;
     width: 390px;
 }
-button[type='submit']{
+.head-contacts input[type='submit']{
     border: none;
-    background: none;
+    background-image: url('back-img/search.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    outline: 0;
     cursor: pointer;
     height: 19px;
-    width: auto;
+    width: 19px;
 }
 .logo{
     float: left;
     margin-top: 40px;
 }
 .carousel{
-    
     width: 980px;
 
 }
@@ -174,7 +188,7 @@ button[type='submit']{
 }
 .slick-dots{
     position: absolute;
-    bottom: -10px;
+    bottom: -6px;
     left: -15px;
     z-index: 999;
 }
@@ -231,27 +245,37 @@ button[type='submit']{
 .slider-shadow {
     display: block;
     margin-left: -120px;
-    margin-bottom: 4px;
+    /*margin-bottom: 4px;*/
+}
+.title{
+    font-family: 'europeext';
 }
 .title img{
     display: block;
     margin: 0 auto 0 auto;
-    padding: 65px 0 20px 0;
+    padding: 65px 0 0 0;
 }
 .title p{
     text-align: center;
     color: #073d79;
     font-weight: bold;
     font-size: 30px;
+    margin-top: 20px;
+}
+.penopolistirol{
+    margin-left: -55px;
+    margin-top: 10px;
 }
 .movie__block{
     display: inline-block;
+    vertical-align: top;
     width: 574px;
     position: absolute;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
+    margin-top: -12px;
 }
 .movie-shadow{
     display: block;
@@ -264,11 +288,13 @@ button[type='submit']{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    text-transform: none;
     font-family: sans-serif;
     font-size: 14px;
     line-height: 17px;
     color: #073d79;
-    margin-bottom: 42px;
+    margin-top: -65px;
+    margin-bottom: 40px;
 }
 .btn{
     display: block;
@@ -297,6 +323,7 @@ button[type='submit']{
     background-color: #026e2c;
 }
 .usage{
+    margin-top: -10px;
     font-family: sans-serif;
     font-size: 14px;
     background: url('back-img/usingarea-background.png') no-repeat;
@@ -315,6 +342,11 @@ button[type='submit']{
     background: url('back-img/usage-img1.jpg') no-repeat;
     display: inline-block;
 }
+.usage__img1>div>span,
+.usage__img2>div>span{
+    display: block;
+    padding-top: 20px;
+}
 .usage__img2{
     position: relative;
     background: url('back-img/usage-img2.jpg') no-repeat content-box;
@@ -328,23 +360,17 @@ button[type='submit']{
     position: absolute;
     top: 92%;
 }
-.usage__img1 div{
+.usage__img1>div{
     width: 610px;
     height: 308px;
     background-color: rgba(0,0,0,0.5);
     color: #fff;
 }
-.usage__img2 div{
+.usage__img2>div{
     width: 610px;
     height: 308px;
     background-color: rgba(0,0,0,0.5);
     color: #fff;
-}
-.usage__list1{
-    list-style: none;
-}
-.usage__list2{
-    list-style: none;
 }
 .usage__img1 div span,
 .usage__img2 div span {
@@ -352,9 +378,16 @@ button[type='submit']{
     padding-left: 48px;
     padding-right: 48px;
 }
-.usage__list1>li,
-.usage__list2>li{
+.usage__list1{
+    list-style: none;
+}
+.usage__list2{
+    list-style: none;
+}
+.usage__list1>li>div,
+.usage__list2>li>div{
     display: inline-block;
+    vertical-align: top;
     margin-right: -40px;
     margin-bottom: 6px;
     padding-right: 48px;
@@ -367,9 +400,8 @@ button[type='submit']{
     margin-right: 0;
     margin-left: -40px;
 }
-.usage__list1>li::before{
+.usage__list1>li>div::before{
     content: '';
-    display: inline-block;
     position: absolute;
     top: 0;
     right: 100%;
@@ -377,9 +409,8 @@ button[type='submit']{
     width: 30%;
     background: rgba(1, 152, 59, 0.39);
 }
-.usage__list1>li::after{
+.usage__list1>li>div::after{
     content: '';
-    display: inline-block;
     position: absolute;
     top: 0;
     right: 100%;
@@ -387,9 +418,8 @@ button[type='submit']{
     width: 15%;
     background: rgba(1, 152, 59, 0.45);
 }
-.usage__list2>li::before{
+.usage__list2>li>div::before{
     content: '';
-    display: inline-block;
     position: absolute;
     top: 0;
     left: 100%;
@@ -397,9 +427,8 @@ button[type='submit']{
     width: 30%;
     background: rgba(1, 152, 59, 0.39);
 }
-.usage__list2>li::after{
+.usage__list2>li>div::after{
     content: '';
-    display: inline-block;
     position: absolute;
     top: 0;
     left: 100%;
@@ -419,6 +448,7 @@ button[type='submit']{
     margin-bottom: 24px;
 }
 .usage__rombs p{
+    margin-top: -5px;
     font-family: sans-serif;
     font-size: 14px;
     font-weight: bold;
@@ -442,28 +472,33 @@ button[type='submit']{
     position: relative;
 }
 .table1__sub{
-    margin-top: 70px;
-    padding: 0 120px;
+    margin-top: -60px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1225px;
+    width: 1225px;
     border: 3px solid #e6ecf4;
     background: rgba(255, 255, 255, 0.6);
     position: relative;
     z-index: 3;
 }
+.table1 .title{
+    margin-top: -5px;
+}
 .table1 .title p{
+    margin-top: 10px;
+    font-weight: bold;
     color: #01983b;
 }
 .table1__sub table{
     margin-left: auto;
     margin-right: auto;
+    margin-top: -10px;
     border: 2px solid #d5dfec;
     border-radius: 4px;
     border-collapse: collapse;
     font-size: 14px;
     font-family: sans-serif;
-    line-height: 39px;
+    line-height: 37px;
     background: #fff;
     color: #043567;
 }
@@ -480,19 +515,21 @@ button[type='submit']{
 }
 .table1__sub table td{
     border: 1px solid #e6ecf4;
-    padding: 0 24px;
+    padding: 0 20px;
+    text-transform: none;
 }
 .table1__sub table th:nth-child(1){
     text-align: left;
-    padding: 0 24px;
+    padding: 0 20px;
 }
 .penopolistirolcopy{
     position: absolute;
     bottom: 65px;
-    right: -60px;
+    left: 1260px;
 }
 .table2{
-    padding: 50px 0 0 0;
+    padding: 20px 0 0 0;
+    text-transform: none;
 
 }
 .table2__sub{
@@ -500,10 +537,18 @@ button[type='submit']{
     margin-right: auto;
     width: 1225px;
 }
+.table2__sub .title p{
+    text-transform: uppercase;
+    color: #01983b;
+}
 .table2__sub table{
     font-family: sans-serif;
     font-size: 14px;
     border-spacing: 0 5px;
+}
+.table2__sub table td{
+    padding-top: 13px;
+    padding-bottom: 13px;
 }
 .table2__sub table tr td:nth-child(1){
     background-color: rgba(255, 0, 0, 0.25);
@@ -550,8 +595,10 @@ button[type='submit']{
 }
 .gallery a{
     float: left;
-    width: 181px;
     margin-right: 40px;
+}
+.gallery img{
+    width: 145px;
 }
 .certificates__sub{
     width: 980px;
@@ -560,8 +607,12 @@ button[type='submit']{
     margin-right: auto;
 }
 .certificates .title{
-    margin-top: 0;
+    margin-top: -14px;
     margin-bottom: 30px;
+    font-weight: bold;
+}
+.certificates .title p{
+    margin-top: 10px;
 }
 .prev__gallery{
     background: url('pic/prev.png');
@@ -570,7 +621,7 @@ button[type='submit']{
     width: 50px;
     height: 50px;
     top: 65%;
-    left: 2%;
+    left: 3%;
     z-index: 3;
 }
 .next__gallery{
@@ -580,8 +631,11 @@ button[type='submit']{
     width: 50px;
     height: 50px;
     top: 65%;
-    right: 2%;
+    left: 87%;
     z-index: 3;
+}
+.award{
+    margin-top: -5px;
 }
 .award p{
     font-family: sans-serif;
@@ -594,19 +648,23 @@ button[type='submit']{
 }
 .award img{
     display: block;
-    width: 110px;
+    width: 120px;
+    height: 120px;
+    margin-top: -25px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
 }
 .end-contacts{
     background: #01983b url('pic/pattern.png');
     display: block;
+    text-transform: none;
     width: 1225px;
-    height: 230px;
+    height: 200px;
     box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.5),inset 0px 3px 0px 0px rgba(255, 255, 255, 0.2);
     margin-left: auto;
     margin-right: auto;
-    padding-top: 30px;
+    padding-top: 10px;
     border-radius: 0 0 20px 20px;
     position: relative;
     z-index: 3;
@@ -621,6 +679,8 @@ button[type='submit']{
     font-size: 30px;
     font-family: 'europeext';
     font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: -15px;
 }
 .end-contacts a{
     font-size: 14px;
@@ -630,7 +690,7 @@ button[type='submit']{
 .map{
     margin-top: -35px;
 }
-footer{
+.footer{
     margin-top: -20px;
     padding: 26px 0 0 0;
     font-family: sans-serif;
@@ -638,25 +698,30 @@ footer{
     height: 320px;
     clear: both;
 }
-footer p{
+.footer span{
+    margin-top: -10px;
+}
+.footer p{
     text-align: center;
+    text-transform: none;
     color: #fff;
     font-size: 12px;
 }
-footer p:last-child{
-    margin-top: 100px;
+.footer p:last-child{
+    margin-top: 85px;
 }
 
-footer .in-vk a{
+.footer .in-vk a{
     display: inline-block;
     width: 33px;
 }
-footer .in-vk a:hover{
+.footer .in-vk a:hover{
     opacity: 0.7;
 }
-footer a{
+.footer a{
     color: #fff;
     display: block;
     text-decoration: none;
     font-size: 12px;
+    text-transform: uppercase;
 }

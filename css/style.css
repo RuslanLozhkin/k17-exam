@@ -34,7 +34,7 @@ body{
     background-clip: border-box;
     background-origin: padding-box;
     background-repeat: no-repeat;
-    background-size: auto auto;
+    background-size: 100% 100%;
     position: relative;
 }
 .table1{

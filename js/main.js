@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('.carousel').slick({
+  $('.js-carousel').slick({
   autoplay: true,
   autoplaySpeed: 4500,
   dots: true,
@@ -10,7 +10,7 @@ $(document).ready(function(){
       return '<a href="#"><img src="img/paging.png"><img src="img/activePaging.png"></a>';
   }
   });
-  $('.gallery').slick({
+  $('.js-gallery').slick({
     autoplay: true,
     autoplaySpeed: 4500,
     dots: false,
@@ -20,16 +20,10 @@ $(document).ready(function(){
     cssEase: 'linear',
     arrows: false
     });
-  $('.prev').click(function(){
-    $('.carousel').slick('slickPrev');  
+  $('.js-prev').click(function(){
+    $('.js-carousel').slick('slickPrev');  
   });
-  $('.next').click(function(){
-    $('.carousel').slick('slickNext');
-  });
-  $('.prev__gallery').click(function(){
-    $('.gallery').slick('slickPrev');  
-  });
-  $('.next__gallery').click(function(){
-    $('.gallery').slick('slickNext');
+  $('.js-next').click(function(){
+    $('.js-carousel').slick('slickNext');
   });
 });

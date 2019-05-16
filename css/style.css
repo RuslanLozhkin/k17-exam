@@ -100,6 +100,9 @@ body{
     float: right;
     margin-top: 25px;
 }
+.head-contacts a:hover{
+    text-decoration: underline;
+}
 .head-contacts p:nth-child(2){
     text-transform: none;
     margin-top: -8px;
@@ -154,7 +157,7 @@ body{
     float: left;
     margin-top: 40px;
 }
-.carousel{
+.js-carousel{
     width: 980px;
 }
 .slider__sub{
@@ -164,7 +167,7 @@ body{
     margin-right: auto;
     margin-top: 16px;
 }
-.prev{
+.js-prev{
     background-image: url('pic/prev.png');
     background-repeat: no-repeat;
     position: absolute;
@@ -173,8 +176,13 @@ body{
     top: 40%;
     left: 2%;
     list-style: none;
+    cursor: pointer;
+    border-radius: 4px;
 }
-.next{
+.js-prev:hover{
+    border: 4px solid rgba(0, 0, 0, .0);
+}
+.js-next{
     background-image: url('pic/next.png');
     background-repeat: no-repeat;
     position: absolute;
@@ -183,6 +191,11 @@ body{
     top: 40%;
     right: 2%;
     list-style: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.js-next:hover{
+    border: 4px solid rgba(0, 0, 0, .0);
 }
 .slick-dots{
     position: absolute;
@@ -303,7 +316,7 @@ body{
     margin-right: auto;
     border-radius: 3px;
     background:#01983b url('pic/pattern.png');
-    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.5);
     margin-bottom: 78px;
     cursor: pointer;
 }
@@ -587,17 +600,21 @@ body{
     background-color: rgba(0, 255, 0, 0.25);
     width: 62px;
 }
-.gallery{
+.js-gallery{
     width: 980px;
     margin-left: auto;
     margin-right: auto;
     clear: both;
 }
-.gallery a{
+.js-gallery a{
     float: left;
     margin-right: 40px;
+    cursor: pointer;
 }
-.gallery img{
+.js-gallery a:hover{
+    opacity: .7;
+}
+.js-gallery img{
     width: 145px;
 }
 .certificates__sub{
@@ -614,28 +631,11 @@ body{
 .certificates .title p{
     margin-top: 10px;
 }
-.prev__gallery{
-    background: url('pic/prev.png');
-    background-repeat: no-repeat;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    top: 65%;
-    left: 3%;
-    z-index: 3;
-}
-.next__gallery{
-    background: url('pic/next.png');
-    background-repeat: no-repeat;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    top: 65%;
-    left: 87%;
-    z-index: 3;
-}
 .award{
     margin-top: -5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1225px;
 }
 .award p{
     font-family: sans-serif;
@@ -647,12 +647,10 @@ body{
     text-align: center;
 }
 .award img{
-    display: block;
-    width: 120px;
-    height: 120px;
+    position: relative;
+    left: 45%;
+    width: 110px;
     margin-top: -25px;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 20px;
 }
 .end-contacts{
@@ -661,13 +659,16 @@ body{
     text-transform: none;
     width: 1225px;
     height: 200px;
-    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.5),inset 0px 3px 0px 0px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.5),inset 0px 3px 0 0 rgba(255, 255, 255, 0.2);
     margin-left: auto;
     margin-right: auto;
     padding-top: 10px;
     border-radius: 0 0 20px 20px;
     position: relative;
     z-index: 3;
+}
+.end-contacts a:hover{
+    text-decoration: underline;
 }
 .end-contacts p{
     text-align: center;
@@ -697,6 +698,9 @@ body{
     font-weight: bold;
     height: 320px;
     clear: both;
+}
+.footer a:hover{
+    text-decoration: underline;
 }
 .footer span{
     margin-top: -10px;
